@@ -1,0 +1,94 @@
+/* banner-slider */
+.slick-dots li button {
+    border: 1px solid #666;
+    border-radius: 50px;
+}
+
+.slick-dots li.slick-active button:before {
+    background: #666;
+    border-radius: 50px;
+}
+.slick-dots li button:before {
+    font-size: 0;
+}
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    background: #666;
+    color: #fff;
+    border-radius: 50px;
+    z-index: 99;
+}
+.slick-prev {
+    left: 5px;
+}
+.slick-next {
+   right: 5px; 
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: #fff;
+    background: #666;
+}
+/* .choose-img-frame {
+    position: relative;
+    max-width: 440px;
+    height: 421px;
+} */
+
+/* animation */
+@keyframes firsting
+{
+    0%   {top: 0; left: 0;}
+    50%  {top: 10px; left: 10px;}
+    100% {top: 0; left: 0;}
+}
+.firsting {
+    position: relative;
+    -webkit-animation: firsting 4s ease-in-out infinite;
+    animation: firsting 4s ease-in-out infinite;
+}
+
+@media only screen and (min-width: 1024px) {
+    .banner-slider-item {
+        display: flex !important;
+    }
+  }
+
+/* filter */
+.btn {
+    cursor: pointer;
+}
+.btn.active {
+    color: #FBBF5E;
+}
+.filterDiv {
+    display: none;
+  }
+.show {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "responsive.css";
