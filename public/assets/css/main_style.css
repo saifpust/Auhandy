@@ -1,3 +1,10 @@
+body {
+    font-family: poppins !important;
+}
+
+
+
+
 /* banner-slider */
 .slick-dots li button {
     border: 1px solid #666;
@@ -68,8 +75,19 @@
     display: block;
   }
 
-
-
+/* sticky header  */
+#myHeader {
+    z-index: 9999;
+}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 56px;
+  }
 
 
 
