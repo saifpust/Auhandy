@@ -24,7 +24,7 @@ body {
     background: #666;
     color: #fff;
     border-radius: 50px;
-    z-index: 99;
+    z-index: 10;
 }
 .slick-prev {
     left: 5px;
@@ -36,11 +36,7 @@ body {
     color: #fff;
     background: #666;
 }
-/* .choose-img-frame {
-    position: relative;
-    max-width: 440px;
-    height: 421px;
-} */
+
 
 /* animation */
 @keyframes firsting
@@ -62,9 +58,6 @@ body {
   }
 
 /* filter */
-.btn {
-    cursor: pointer;
-}
 .btn.active {
     color: #FBBF5E;
 }
@@ -76,9 +69,6 @@ body {
   }
 
 /* sticky header  */
-#myHeader {
-    z-index: 9999;
-}
   .sticky {
     position: fixed;
     top: 0;
@@ -89,10 +79,29 @@ body {
     padding-top: 56px;
   }
 
-
-
-
-
+/* navigation menu  */
+  .topnav #myLinks {
+    right: 0px;
+    height: 750px;
+  }
+  
+  .topnav a.icon {
+    right: 20px;
+    top: calc(50% - 20px);;
+  }
+  
+  /* bars menu  */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 8px);
+    transform: rotate(-45deg) translate(-5px, 8px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -9px);
+  }
 
 
 

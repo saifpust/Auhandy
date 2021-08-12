@@ -16,12 +16,39 @@
           }]
       });
   
-
+// sticky header 
+window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+  
+       
       
   })(jQuery);
 
 
 
+ // navigation menu 
+ function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.opacity === "1") {
+      x.style.opacity = "0";
+    } else {
+      x.style.opacity = "1";
+    }
+  }
 
+//   bars menu 
+function myFun(x) {
+    x.classList.toggle("change");
+  }
 
   
