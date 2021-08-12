@@ -39,10 +39,10 @@ window.onscroll = function() {myFunction()};
  // navigation menu 
  function myFunction() {
     var x = document.getElementById("myLinks");
-    if (x.style.opacity === "1") {
-      x.style.opacity = "0";
+    if (x.style.width === "25rem") {
+      x.style.width = "0";
     } else {
-      x.style.opacity = "1";
+      x.style.width = "25rem";
     }
   }
 

@@ -58,6 +58,9 @@ body {
   }
 
 /* filter */
+.btn {
+  cursor: pointer;
+}
 .btn.active {
     color: #FBBF5E;
 }
