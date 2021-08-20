@@ -25,10 +25,9 @@ body {
   }
 
 
-
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1024px) {
     .header-wraper {
-      height: 94px;
+      height: 87px;
     }
   }
 @import "responsive.css";
