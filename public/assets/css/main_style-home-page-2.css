@@ -1,0 +1,35 @@
+body {
+    font-family: poppins !important;
+}
+  
+  .header-wraper {
+    height: 119px;
+  }
+  .sticky-top {
+    /* position: fixed; */
+    top: -120px;
+    width: 100%;
+    transition: ease-in .8s;
+  }
+  .sticky-header {
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    transition: ease-in-out .8s;
+  }
+
+  .sticky-header .gen-header {
+    display: none;
+  }
+  .sticky-header .stik-header {
+    display: block;
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .header-wraper {
+      height: 94px;
+    }
+  }
+@import "responsive.css";

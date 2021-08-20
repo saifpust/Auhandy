@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="assets/css/main_style.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -54,7 +53,7 @@
         <div class="container m-auto block sm:hidden">
             <div class="topnav relative">
                 <a class="active w-1/2 py-4 px-2" href="index.html"><img src="assets/images/Logo.png" alt="Auhandy"></a>
-                <div id="myLinks" class="bg-gray-600 text-white uppercase text-xl absolute w-0 z-50 duration-500">
+                <div id="myLinks" class="bg-gray-600 text-white uppercase text-xl absolute w-0 z-50 duration-500 overflow-hidden">
                     <a class="pb-3 pl-6 pt-6 block hover:text-black" href="#">Service</a>
                     <a class="pb-3 pl-6 block hover:text-black" href="#">Projects</a>
                     <a class="pb-3 pl-6 block hover:text-black" href="#">Pages</a>
@@ -130,7 +129,7 @@
     <div class="choose mb-10 sm:mb-20">
         <div class="container m-auto lg:flex justify-between">
             <div class="choose-img lg:w-2/5 lg:pr-6 p-6">
-                <div class="choose-img-frame relative">
+                <div class="choose-img-frame relative border-2 border-yellow-400">
                     <img class="m-auto firsting" src="assets/images/choose.jpg" alt="">
                 </div>
             </div>
@@ -185,34 +184,46 @@
                 <div class="h-1 w-20 bg-white m-auto mt-4"></div>
             </div>
             <div class="service-items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 p-6 pb-8">
-                <a href="#" class="service-item text-center border-2 border-blue-800 hover:bg-blue-800 transition ease-in-out duration-300 p-4 sm:p-6">
-                    <div class="service-i-icon text-white text-4xl pb-2">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h4 class="text-white text-2xl font-bold pb-2">Engine Repairs</h4>
-                    <p class="text-white text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </a><!-- service-item -->
-                <a href="#" class="service-item text-center border-2 border-blue-800 hover:bg-blue-800 transition ease-in-out duration-300 p-4 sm:p-6">
-                    <div class="service-i-icon text-white text-4xl pb-2">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h4 class="text-white text-2xl font-bold pb-2">Electrical</h4>
-                    <p class="text-white text-lg font-normal">Donec malesuada, purus a viverra sodales leo purus lobortis</p>
-                </a><!-- service-item -->
-                <a href="#" class="service-item text-center border-2 border-blue-800 hover:bg-blue-800 transition ease-in-out duration-300 p-4 sm:p-6">
-                    <div class="service-i-icon text-white text-4xl pb-2">
-                        <i class="fas fa-puzzle-piece"></i>
-                    </div>
-                    <h4 class="text-white text-2xl font-bold pb-2">Plumbing</h4>
-                    <p class="text-white text-lg font-normal">Praesent dignissim mattis mauris. Sed finibus elementu.</p>
-                </a><!-- service-item -->
-                <a href="#" class="service-item text-center border-2 border-blue-800 hover:bg-blue-800 transition ease-in-out duration-300 p-4 sm:p-6">
-                    <div class="service-i-icon text-white text-4xl pb-2">
-                        <i class="fas fa-wrench"></i>
-                    </div>
-                    <h4 class="text-white text-2xl font-bold pb-2">Repair House</h4>
-                    <p class="text-white text-lg font-normal">Phasellus venenatis mauris eget isque tincidunt</p>
-                </a><!-- service-item -->
+                <div class="service-item relative">
+                    <img src="assets/images/project-1.jpg" alt="">
+                    <a href="#" class="service-content absolute bg-blue-800 top-0 left-0 w-full h-full flex items-center justify-center flex-col p-2">
+                        <div class="service-i-icon text-white text-4xl pb-2">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 class="text-white text-2xl font-bold pb-2">Engine Repairs</h4>
+                        <p class="text-white text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+                </div><!-- service-item -->
+                <div class="service-item relative">
+                    <img src="assets/images/project-2.jpg" alt="">
+                    <a href="#" class="service-content absolute bg-blue-800 top-0 left-0 w-full h-full flex items-center justify-center flex-col p-2">
+                        <div class="service-i-icon text-white text-4xl pb-2">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="text-white text-2xl font-bold pb-2">Electrical</h4>
+                        <p class="text-white text-lg font-normal">Donec malesuada, purus a viverra sodales leo purus lobortis</p>
+                    </a>
+                </div><!-- service-item -->
+                <div class="service-item relative">
+                    <img src="assets/images/project-3.jpg" alt="">
+                    <a href="#" class="service-content absolute bg-blue-800 top-0 left-0 w-full h-full flex items-center justify-center flex-col p-2">
+                        <div class="service-i-icon text-white text-4xl pb-2">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4 class="text-white text-2xl font-bold pb-2">Plumbing</h4>
+                        <p class="text-white text-lg font-normal">Praesent dignissim mattis mauris. Sed finibus elementu.</p>
+                    </a>
+                </div><!-- service-item -->
+                <div class="service-item relative">
+                    <img src="assets/images/project-1.jpg" alt="">
+                    <a href="#" class="service-content absolute bg-blue-800 top-0 left-0 w-full h-full flex items-center justify-center flex-col p-2">
+                        <div class="service-i-icon text-white text-4xl pb-2">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h4 class="text-white text-2xl font-bold pb-2">Repair House</h4>
+                        <p class="text-white text-lg font-normal">Phasellus venenatis mauris eget isque tincidunt</p>
+                    </a><!-- service-item -->
+                </div><!-- service-item -->
             </div> <!-- service-items -->
             <a href="#" class="text-white text-lg font-medium uppercase bg-yellow-400 py-2 px-4 border-2 border-yellow-400 hover:bg-transparent transition ease-in-out duration-300">View all service</a>
         </div> <!-- container -->
@@ -224,44 +235,62 @@
                 <div class="h-1 w-20 bg-blue-800 m-auto mt-4"></div>
             </div>
             <div class="projects-menu pb-4">
-                <ul class="sm:flex justify-center text-gray-700 text-lg font-medium uppercase" id="myBtn">
-                    <li class="p-2"><a class="hover:text-yellow-400 transition ease-in-out duration-300 btn active" onclick="filterSelection('all')">All</a></li>
-                    <li class="p-2"><a class="hover:text-yellow-400 transition ease-in-out duration-300 btn" onclick="filterSelection('engine-repair')">Engine Repair</a></li>
-                    <li class="p-2"><a class="hover:text-yellow-400 transition ease-in-out duration-300 btn" onclick="filterSelection('eletrical')">Electrical</a></li>
-                    <li class="p-2"><a class="hover:text-yellow-400 transition ease-in-out duration-300 btn" onclick="filterSelection('repair-house')">Repair House</a></li>
-                    <li class="p-2"><a class="hover:text-yellow-400 transition ease-in-out duration-300 btn" onclick="filterSelection('wall-paint')">Wall Paint</a></li>
+                <ul class="sm:flex justify-center text-gray-700 text-lg font-medium uppercase gallery-menu-items">
+                    <li class="cursor-pointer p-2 active-gallery-item" data-target="all"><a class="hover:text-yellow-400 transition ease-in-out duration-300">All</a></li>
+                    <li class="cursor-pointer p-2" data-target="engine-repair"><a class="hover:text-yellow-400 transition ease-in-out duration-300">Engine Repair</a></li>
+                    <li class="cursor-pointer p-2" data-target="electrical"><a class="hover:text-yellow-400 transition ease-in-out duration-300">Electrical</a></li>
+                    <li class="cursor-pointer p-2" data-target="repair-house"><a class="hover:text-yellow-400 transition ease-in-out duration-300">Repair House</a></li>
+                    <li class="cursor-pointer p-2" data-target="wall-paint"><a class="hover:text-yellow-400 transition ease-in-out duration-300">Wall Paint</a></li>
                 </ul>
             </div>
-            <div class="projects-items overflow-hidden p-4 grid grid-flow-row gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="prijects-item filterDiv engine-repair bg-blue-800 py-10 px-5">
-                    <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
-                    <h5 class="text-md text-white font-normal">Repair House</h5>
-                    <a class="text-lg text-white" href="#"><i class="fas fa-search"></i></a>
+            <div class="projects-items overflow-hidden p-4 flex items-center justify-center flex-wrap">
+                <div class="prijects-item w-full sm:w-1/2 lg:w-1/3 relative py-2 sm:p-2" data-item="engine-repair">
+                    <img src="assets/images/project-1.jpg" alt="">
+                    <div class="project-content bg-blue-800 absolute top-0 left-0 w-0 h-full flex items-center justify-center flex-col">
+                        <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
+                        <h5 class="text-md text-white font-normal">Repair House</h5>
+                        <a class="text-lg text-white hover:text-yellow-400" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div> <!-- projects-item -->
-                <div class="prijects-item filterDiv eletrical bg-green-800 py-10 px-5">
-                    <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
-                    <h5 class="text-md text-white font-normal">Repair House</h5>
-                    <a class="text-lg text-white" href="#"><i class="fas fa-search"></i></a>
+                <div class="prijects-item w-full sm:w-1/2 lg:w-1/3 relative py-2 sm:p-2" data-item="electrical">
+                    <img src="assets/images/project-2.jpg" alt="">
+                    <div class="project-content bg-blue-800 absolute top-0 left-0 w-0 h-full flex items-center justify-center flex-col">
+                        <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
+                        <h5 class="text-md text-white font-normal">Repair House</h5>
+                        <a class="text-lg text-white hover:text-yellow-400" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div> <!-- projects-item -->
-                <div class="prijects-item filterDiv repair-house bg-blue-600 py-10 px-5">
-                    <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
-                    <h5 class="text-md text-white font-normal">Repair House</h5>
-                    <a class="text-lg text-white" href="#"><i class="fas fa-search"></i></a>
+                <div class="prijects-item w-full sm:w-1/2 lg:w-1/3 relative py-2 sm:p-2" data-item="repair-house">
+                    <img src="assets/images/project-3.jpg" alt="">
+                    <div class="project-content bg-blue-800 absolute top-0 left-0 w-0 h-full flex items-center justify-center flex-col">
+                        <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
+                        <h5 class="text-md text-white font-normal">Repair House</h5>
+                        <a class="text-lg text-white hover:text-yellow-400" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div> <!-- projects-item -->
-                <div class="prijects-item filterDiv wall-paint bg-green-400 py-10 px-5">
-                    <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
-                    <h5 class="text-md text-white font-normal">Repair House</h5>
-                    <a class="text-lg text-white" href="#"><i class="fas fa-search"></i></a>
+                <div class="prijects-item w-full sm:w-1/2 lg:w-1/3 relative py-2 sm:p-2" data-item="wall-paint">
+                    <img src="assets/images/project-1.jpg" alt="">
+                    <div class="project-content bg-blue-800 absolute top-0 left-0 w-0 h-full flex items-center justify-center flex-col">
+                        <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
+                        <h5 class="text-md text-white font-normal">Repair House</h5>
+                        <a class="text-lg text-white hover:text-yellow-400" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div> <!-- projects-item -->
-                <div class="prijects-item filterDiv engine-repair repair-house bg-gray-600 py-10 px-5">
-                    <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
-                    <h5 class="text-md text-white font-normal">Repair House</h5>
-                    <a class="text-lg text-white" href="#"><i class="fas fa-search"></i></a>
+                <div class="prijects-item w-full sm:w-1/2 lg:w-1/3 relative py-2 sm:p-2" data-item="engine-repair">
+                    <img src="assets/images/project-2.jpg" alt="">
+                    <div class="project-content bg-blue-800 absolute top-0 left-0 w-0 h-full flex items-center justify-center flex-col">
+                        <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
+                        <h5 class="text-md text-white font-normal">Repair House</h5>
+                        <a class="text-lg text-white hover:text-yellow-400" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div> <!-- projects-item -->
-                <div class="prijects-item filterDiv eletrical wall-paint bg-blue-400 py-10 px-5">
-                    <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
-                    <h5 class="text-md text-white font-normal">Repair House</h5>
-                    <a class="text-lg text-white" href="#"><i class="fas fa-search"></i></a>
+                <div class="prijects-item w-full sm:w-1/2 lg:w-1/3 relative py-2 sm:p-2" data-item="electrical">
+                    <img src="assets/images/project-3.jpg" alt="">
+                    <div class="project-content bg-blue-800 absolute top-0 left-0 w-0 h-full flex items-center justify-center flex-col">
+                        <h3 class="text-lg text-yellow-400 font-bold">Pellentesque finibus maximus.</h3>
+                        <h5 class="text-md text-white font-normal">Repair House</h5>
+                        <a class="text-lg text-white hover:text-yellow-400" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div> <!-- projects-item -->
             </div> <!-- projects-items -->
         </div> <!-- container -->
@@ -281,7 +310,7 @@
                      </div>
                 </div>
             </div>
-            <div class="problem-img relative">
+            <div class="problem-img relative border-2 border-white">
                 <img class="m-auto firsting" src="assets/images/problem.jpg" alt="">
             </div>
         </div>
@@ -328,73 +357,73 @@
             <img class="m-auto" src="assets/images/Vector Smart Object-4.png" alt="">
         </div> <!-- container -->
     </div><!-- logo-sec -->
-    <div class="footer bg-gray-700 py-14 px-4">
-        <div class="max-w-sm lg:container m-auto grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-6">
-            <div class="footer-contact">
-                <div class="contact-title text-center lg:text-left text-2xl text-white font-normal uppercase pb-8">
-                    <h3>Contact Us</h3>
-                </div>
-                <div class="footer-contact-item">
-                   <ul>
-                       <li><a class="flex items-center pb-4" href="tel:+1 23 567 8596"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-mobile-alt text-yellow-400 text-2xl"></i></span><span class="text-2xl text-white font-normal">+1 23 567 8596 <p class="text-sm text-gray-300">Support 24/7 Weekdays</p></span></a></li>
-                       <li><a class="flex items-center pb-4" href="https://www.google.com/maps/place/Pabna/@24.0130262,89.232459,14z/data=!3m1!4b1!4m5!3m4!1s0x39fe84d98fa5bf3d:0xb038902617eb9884!8m2!3d24.0128563!4d89.2590572" target="_blank"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-map-marker-alt text-yellow-400 text-2xl"></i></span><span class="text-sm text-gray-300">Auhandy Tower, New York, NY 10013, USA</span></a></li>
-                       <li><a class="flex items-center pb-4" href="mailto:info@example.com"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-envelope text-yellow-400 text-2xl"></i></span><span class="text-sm text-gray-300">info@example.com</span></a></li>
-                       <li><a class="flex items-center pb-4"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-clock text-yellow-400 text-2xl"></i></span><span class="text-sm text-gray-300">Weekdays: 09:00am - 06:00pm</span></a></li>
-                   </ul>
-                </div>
-            </div><!-- footer-contact  -->
-            <div class="footer-service">
-                <div class="service-title text-center lg:text-left text-2xl text-white font-normal uppercase pb-8">
-                    <h3>Our Service</h3>
-                </div>
-                <div class="footer-service-item">
-                    <ul class="grid grid-flow-row grid-cols-2 gap-4">
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Electrical</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Installation</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Plumbing</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Garden Repairs</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Engine Repair</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Soil Drilling</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Repair House</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Support 24/7</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Home Maintenance</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Inspection House</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Wall Paint</span></a></li>
-                        <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Remodeling Ceiling</span></a></li>
+    <footer>
+        <div class="footer bg-gray-700 py-14 px-4">
+            <div class="max-w-sm lg:container m-auto grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="footer-contact">
+                    <div class="contact-title text-center lg:text-left text-2xl text-white font-normal uppercase pb-8">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="footer-contact-item">
+                    <ul>
+                        <li><a class="flex items-center pb-4" href="tel:+1 23 567 8596"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-mobile-alt text-yellow-400 text-2xl"></i></span><span class="text-2xl text-white font-normal">+1 23 567 8596 <p class="text-sm text-gray-300">Support 24/7 Weekdays</p></span></a></li>
+                        <li><a class="flex items-center pb-4" href="https://www.google.com/maps/place/Pabna/@24.0130262,89.232459,14z/data=!3m1!4b1!4m5!3m4!1s0x39fe84d98fa5bf3d:0xb038902617eb9884!8m2!3d24.0128563!4d89.2590572" target="_blank"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-map-marker-alt text-yellow-400 text-2xl"></i></span><span class="text-sm text-gray-300">Auhandy Tower, New York, NY 10013, USA</span></a></li>
+                        <li><a class="flex items-center pb-4" href="mailto:info@example.com"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-envelope text-yellow-400 text-2xl"></i></span><span class="text-sm text-gray-300">info@example.com</span></a></li>
+                        <li><a class="flex items-center pb-4"><span class="w-14 h-14 bg-gray-600 mr-4 rounded-full flex items-center justify-center"><i class="fas fa-clock text-yellow-400 text-2xl"></i></span><span class="text-sm text-gray-300">Weekdays: 09:00am - 06:00pm</span></a></li>
                     </ul>
-                </div>
-            </div><!-- footer-service  -->
-            <div class="footer-offer">
-                <div class="offer-wraper text-center border-dashed border-2 border-gray-600 py-14">
-                    <div class="offer text-2xl text-white font-normal uppercase pb-2">
-                        <span>Get</span><span class="text-4xl text-yellow-400 font-bold px-2">25%</span><span>Off</span>
                     </div>
-                    <div class="offer-name text-xl text-white font-normal pb-4">
-                        <h3>Electrical Service</h3>
+                </div><!-- footer-contact  -->
+                <div class="footer-service">
+                    <div class="service-title text-center lg:text-left text-2xl text-white font-normal uppercase pb-8">
+                        <h3>Our Service</h3>
                     </div>
-                    <div class="redeem-code text-sm font-normal">
-                        <span class="text-gray-300 pr-2">Redeem Code:</span><span class="text-yellow-400 uppercase">HANDYHPY28</span>
+                    <div class="footer-service-item">
+                        <ul class="grid grid-flow-row grid-cols-2 gap-4">
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Electrical</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Installation</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Plumbing</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Garden Repairs</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Engine Repair</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Soil Drilling</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Repair House</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Support 24/7</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Home Maintenance</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Inspection House</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Wall Paint</span></a></li>
+                            <li><a class="flex items-center" href="#"><i class="fas fa-angle-right text-yellow-400 text-xl pr-2"></i><span class="text-sm text-gray-300">Remodeling Ceiling</span></a></li>
+                        </ul>
                     </div>
-                </div>
-            </div><!-- footer-offer  -->
-        </div> <!-- container -->
-    </div> <!-- footer  -->
-    <div class="copyright bg-gray-900 py-8">
-        <div class="container m-auto text-sm text-gray-500 font-normal text-center">
-            <h5>Copyright © 2021 <span class="text-yellow-400">Auhandy</span>. Get The Theme</h5>
-        </div>
-    </div><!-- copyright -->
-
+                </div><!-- footer-service  -->
+                <div class="footer-offer">
+                    <div class="offer-wraper text-center border-dashed border-2 border-gray-600 py-14">
+                        <div class="offer text-2xl text-white font-normal uppercase pb-2">
+                            <span>Get</span><span class="text-4xl text-yellow-400 font-bold px-2">25%</span><span>Off</span>
+                        </div>
+                        <div class="offer-name text-xl text-white font-normal pb-4">
+                            <h3>Electrical Service</h3>
+                        </div>
+                        <div class="redeem-code text-sm font-normal">
+                            <span class="text-gray-300 pr-2">Redeem Code:</span><span class="text-yellow-400 uppercase">HANDYHPY28</span>
+                        </div>
+                    </div>
+                </div><!-- footer-offer  -->
+            </div> <!-- container -->
+        </div> <!-- footer  -->
+        <div class="copyright bg-gray-900 py-8">
+            <div class="container m-auto text-sm text-gray-500 font-normal text-center">
+                <h5>Copyright © 2021 <span class="text-yellow-400">Auhandy</span>. Get The Theme</h5>
+            </div>
+        </div><!-- copyright -->
+    </footer>
     
+
+
     <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script type="text/javascript" src="assets/js/projects-filter.js"></script>
+    <script type="text/javascript" src="assets/js/isotoe-filtering.js"></script>
     
-
-    <!-- <script type="text/javascript">
-        $('.banner-slider').slick();
-      </script> -->
 
 </body>
 </html>
