@@ -6,7 +6,6 @@ body {
     height: 119px;
   }
   .sticky-top {
-    /* position: fixed; */
     top: -120px;
     width: 100%;
     transition: ease-in .8s;
